@@ -48,7 +48,7 @@ func main() {
   
   r.GET("/", func(c *gin.Context) {
     people := get_all()
-    c.HTML(200, "index.tmpl", gin.H{"people": people,})
+    c.HTML(200, "index.tmpl", gin.H{"people": people})
   })
 
   r.POST("/new", func(c *gin.Context) {
