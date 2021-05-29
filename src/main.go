@@ -43,7 +43,7 @@ func get_all() []Person {
 
 func main() {
   r := gin.Default()
-  r.LoadHTMLGlob("templates/*")
+  r.LoadHTMLGlob("src/templates/*")
   db_init()
   
   r.GET("/", func(c *gin.Context) {
